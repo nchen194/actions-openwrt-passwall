@@ -13,4 +13,4 @@ sed -i 's/192.168.$((addr_offset++)).1/10.10.$((addr_offset++)).4/g' package/bas
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 #cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
 echo -e "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y" >> .config
-echo -e "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y" >> .config
+echo -e "CONFIG_PACKAGE_luci-app-adguardhome" >> .config
